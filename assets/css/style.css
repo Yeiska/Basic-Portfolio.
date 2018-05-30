@@ -43,10 +43,23 @@ nav ul li a{
     padding: 5px 15px;
     border-right: 2px solid #4aaaa5;
     text-decoration: none;
+    transition-duration: .5s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
 }
 nav ul li:last-child a{
     border-right: none;
     padding-right: none;
+}
+
+nav a:hover {
+    background: #4aaaa5;
+    color: white;
+    
+}
+
+input{
+    width: 600px;
 }
 .wrapper{
     width: 960px;
@@ -56,6 +69,32 @@ nav ul li:last-child a{
 .clearfix{
     display: block;
     clear: both;
+    margin-bottom: 130px;
+}
+
+.portfolio{
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+    width: 35%;
+    float: left;
+    height: 150px;
+
+}
+
+.portfolio:nth-of-type(even){
+    position: relative;
+    margin-left: 20px;
+}
+
+.portfolio h4{
+     background: #4aaaa5;
+     color: white;
+     text-align: center;
+     padding: 2px 0;
+     position: absolute;
+     width: 100%;
+     bottom: 3px;
 }
 #left-column, #rigth-column{
     background: white;
@@ -97,10 +136,69 @@ nav ul li:last-child a{
 #rigth-column ul li img{
     width: 60px;
 }
+
+#canon{
+    background: url(../images/100_3376.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#me{
+    background: url(../images/100_3387.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#view{
+    background: url(../images/20161011_092339.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#water{
+    background: url(../images/20170401_164753.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#lake{
+    background: url(../images/20170401_165426_001.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 p{
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 20px;
+}
+
+form label{
+    font-size: 18px;
+    display: block;
+}
+
+form input form textarea{
+    width: 600px;
+    display: block;
+    margin: 5px 0px 20px 0px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+}
+
+form button{
+    background: #4aaaa5;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    font-size: 18px;
+    border: none;
+}
+
+textarea{
+    height: 100px;
+    width: 600px;
 }
 
 .foto{
@@ -116,44 +214,10 @@ footer{
     border-top: 5px solid #4aaaa5;
     color: #ccc;
     text-align: center;
-    padding: 40px;
-    margin-top: 30px;
-}
-
-#fuente{
-    width: 200px;
-    height: 200px;
-    float: left;
-}
-
-#pato{
-    width: 200px;
-    height: 200px;
-    clear: both;
-    margin-top: 10px;
-}
-
-#hover{
-    width: 200px;
-    height: 200px;
-    clear: both;
-    margin-top: 10px;
-}
-
-#me{
-    width: 200px;
-    height: 200px;
-    float: right;
-    margin-top: 10px;
-}
-
-#canon{
-    width: 200px;
-    height: 200px;
-    float: right;
-}
-
-
-#bar{
-    background-color: #4aaaa5; 
+    padding: 20px;
+    margin-top: 5px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 5px;
 }
